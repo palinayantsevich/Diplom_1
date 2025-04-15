@@ -26,7 +26,7 @@ class TestIngredient():
                                   IngredientData.INGREDIENT_PRICE[1])
                              ]
                              )
-    def test_get_price_returned_correct_ingredient_price(self, ingredient_type, ingredient_name, ingredient_price):
+    def test_get_type_returned_correct_ingredient_type(self, ingredient_type, ingredient_name, ingredient_price):
         ingredient = Ingredient(ingredient_type=ingredient_type, name=ingredient_name, price=ingredient_price)
         assert ingredient.get_type() == ingredient_type
 
@@ -38,7 +38,7 @@ class TestIngredient():
                                   IngredientData.INGREDIENT_PRICE[1])
                              ]
                              )
-    def test_get_price_returned_correct_ingredient_price(self, ingredient_type, ingredient_name, ingredient_price):
+    def test_get_name_returned_correct_ingredient_name(self, ingredient_type, ingredient_name, ingredient_price):
         ingredient = Ingredient(ingredient_type=ingredient_type, name=ingredient_name, price=ingredient_price)
         assert ingredient.get_name() == ingredient_name
 
